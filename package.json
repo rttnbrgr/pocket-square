@@ -1,0 +1,25 @@
+{
+  "name": "pocket-square",
+  "version": "1.0.0",
+  "description": "1000W Job Application",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "harp": "^0.20.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayox/pocket-square.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tayox/pocket-square/issues"
+  },
+  "homepage": "https://github.com/tayox/pocket-square#readme"
+}
