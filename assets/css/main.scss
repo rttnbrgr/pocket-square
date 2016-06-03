@@ -2,11 +2,9 @@
 @import "/node_modules/normalize.css/normalize.css";
 @import "bourbon/bourbon";
 
-/** 
- * Border-Box
- */
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
+// Base
+
+// @import '2-variables'
 
 // 1000 Watts Colors
 $c1001: #e9792f;
@@ -17,140 +15,55 @@ $c1005: #4d8dc8;
 $c1006: #99c1e4;
 
 $radius: 5px;
-
+// Other Colors
 $grey-1: #686868;
 $grey-2: #a7a9ac;
-
 $accent-color: $c1004;
 
-body {
-	color: $grey-1;	
-	font-size: 14px;
-	line-height: 1.42857;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: normal;	
-}
+// Helpful Classes
+.hide { display: none!important; }
 
-p {
-	font-size: 1rem;
-	font-weight: normal;
-	font-weight: 400;
-	line-height: 1.7125;
-}
 
-h3 {
-	color: $accent-color;
-  margin-bottom: 30px;
-  margin: 1.25rem 0 1rem;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
-  font-family: "proxima-nova-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+@import '2-base';
 
-a.profile__contact {
-	font-weight: 600;
-	font-size: .875rem;
+
+
+// Modules
+@import '3-profile';
+@import '3-button';
+
+header {
 	display: block;
-	color: $grey-2;
-	margin: 1rem 0 2rem;
-	&:before {
-		content: "";
-		display: inline-block;
-		margin: 0 1rem 0 0;
-		@include size(22px);
-		background-image: url('/assets/img/mail-icon.png');
-		vertical-align: top;
-		position: relative;
-		top: -3px;
-	}
-}
-
-.modal {
-	@include position(absolute, 0);
-	background-color: whitesmoke;
-	// background-color: $c1003;	
-	padding: 2rem 1rem;
-}
-
-.profile {
-	display: block;
-	max-width: 37.5rem;
 	position: relative;
 	background-color: whitesmoke;
-}
+	@include display(flex);
+	align-items: center;
+	justify-content: space-between;
 
-.profile__img {
-	@include size(180px);
-	// border-radius: 50%;
-	font-family: "proxima-nova-soft",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	position: relative;
-	left: -2px;
-	top:-2px
-}
-
-
-
-
-
-.btn {
-	  display: inline-block;
-  padding: 11px 23px;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.428571429;
-  text-align: center;
-  white-space: nowrap;
-  text-transform: uppercase;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  border-radius: 50px;
-
-  background-color: $accent-color;
-  border: 3px solid $accent-color;
-  color: white;
-	
-	margin-top: 1rem;
-
-  &:hover {
-  	background-color: transparent;
-  	color: $accent-color;
-
-  }
-}
-
-.btn--close {
-	@include size(3rem);
-	@include position(absolute, 0 0 null null);
-	// background-color: $c1005;
-	
-	&:after, &:before {
-		content: "";
-		@include size(1px 100%);
-		background-color: $c1001;
-		background-color: $grey-2;
-		@include position(absolute, 0 null null 50%);
-	}	
-	&:after {
-		@include transform(rotate(45deg));
+	img {
+		@include size(3.125rem auto);
 	}
-	&:before {
-		@include transform(rotate(-45deg));
+
+	a {
+		font-family: $proxima;
+		text-transform: uppercase;
+		font-size: 1.625rem;
 	}
 }
 
+nav {
 
+	a {
+		display: block;
+		font-size: 1rem;
+		padding: .5rem 1rem;
+		&:nth-child(1) { background-color: $c1001; }
+		&:nth-child(2) { background-color: $c1002; }
+		&:nth-child(3) { background-color: $c1003; }
+		&:nth-child(4) { background-color: $c1004; }
+
+	}
+}
 
 
 

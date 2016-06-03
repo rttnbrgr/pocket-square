@@ -1,0 +1,43 @@
+a.profile__contact {
+	font-weight: 600;
+	font-size: .875rem;
+	display: block;
+	color: $grey-2;
+	margin: 1rem 0 2rem;
+	&:before {
+		content: "";
+		display: inline-block;
+		margin: 0 1rem 0 0;
+		@include size(22px);
+		background-image: url('/assets/img/mail-icon.png');
+		vertical-align: top;
+		position: relative;
+		top: -3px;
+	}
+}
+
+.modal {
+	@include position(absolute, 0);
+	background-color: whitesmoke;
+	// background-color: $c1003;	
+	padding: 2rem 1rem;
+}
+
+.profile {
+	display: block;
+	max-width: 37.5rem;
+	position: relative;
+	background-color: whitesmoke;
+	margin: 0 auto;
+}
+
+.profile__img {
+	@include size(180px);
+	// border-radius: 50%;
+	font-family: "proxima-nova-soft",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	position: relative;
+	left: -2px;
+	top:-2px
+}

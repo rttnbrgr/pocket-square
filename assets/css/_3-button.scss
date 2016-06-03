@@ -1,0 +1,69 @@
+.btn {
+	cursor: pointer;
+}
+
+.btn-default {
+	  display: inline-block;
+  padding: 11px 23px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border-radius: 50px;
+
+  background-color: $accent-color;
+  border: 3px solid $accent-color;
+  color: white;
+	
+	margin-top: 1rem;
+
+  &:hover {
+  	background-color: transparent;
+  	color: $accent-color;
+
+  }
+}
+
+.btn--close {
+	@include size(3rem);
+	@include position(absolute, 0 0 null null);
+	// background-color: $c1005;
+	
+	&:after, &:before {
+		content: "";
+		@include size(1px 100%);
+		background-color: $c1001;
+		background-color: $grey-2;
+		@include position(absolute, 0 null null 50%);
+	}	
+	&:after {
+		@include transform(rotate(45deg));
+	}
+	&:before {
+		@include transform(rotate(-45deg));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

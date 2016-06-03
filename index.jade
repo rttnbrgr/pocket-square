@@ -4,16 +4,25 @@ html(lang="en")
 include ./_includes/head.jade
 
 body
-	h1 Bickin Back Bein Boolio
-	p today
-	p its working
+	
+	.navbar
+		nav
+			a Nah I'm Good
+			a Tell Me More
+			a Qualifications
+			a Your Next Team Member
+		header
+			img(src='assets/img/1000-logo.png')
+			a 1000 Watt
 
-	.modal.profile-modal
+	.modal.profile-modal#js-profileModal.hide
 		.profile
 			img.profile__img(src="http://1000watt.net/wp/wp-content/themes/roots-1kw/assets/img/members/dd.png")
 			.profile__info
 				h3 Nathan Rothenberger
 				a(mailto:nroth10@gmail.com).profile__contact nathan@1000watt.net
 			p.profile__blurb Knausgaard blog you probably haven't heard of them poutine etsy asymmetrical. Kickstarter gochujang literally blue bottle. Everyday carry waistcoat swag church-key humblebrag kitsch. Tacos gentrify selvage mumblecore. Swag you probably haven't heard of them kombucha whatever brunch. Wolf drinking vinegar tofu, skateboard stumptown kogi butcher listicle.
-			a.btn contact me
-			a.btn--close#js-profileClose
+			a.btn.btn-default contact me
+			a.btn.btn--close#js-profileClose
+
+script(src='assets/js/main.js')
