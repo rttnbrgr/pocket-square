@@ -25,3 +25,4 @@
 [npmjs]: https://www.npmjs.com/package/gulp-watch
 [stackoverflow]: http://stackoverflow.com/questions/31636475/how-to-add-my-node-module-modules-into-package-json
 [stackoverflow 2]: http://stackoverflow.com/questions/9961502/is-there-a-way-to-automatically-build-the-package-json-file-for-node-js-projects
+https://ines.io/blog/the-ultimate-guide-static-websites-harp-jade.html
